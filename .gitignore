@@ -1,0 +1,14 @@
+# GENERAL
+.DS_Store
+
+# C objects
+*.o
+
+# C libraries
+*.lib
+*.a
+
+# Executables
+*.out
+*.app
+*.hex
