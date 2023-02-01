@@ -6,7 +6,7 @@
 #    By: juan-aga <juan_aga@student.42malaga.c      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/17 11:31:42 by juan-aga          #+#    #+#              #
-#    Updated: 2023/02/01 15:16:02 by juan-aga         ###   ########.fr        #
+#    Updated: 2023/02/01 15:50:26 by juan-aga         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -66,6 +66,7 @@ OBJ_CK		:= ${SRC_CK:.c=.o} \
 all:		${LIBS} ${NAME}
 
 ${LIBS}:
+			@git submodule update --init
 			@${MAKE} -C ${LIBFT}
 
 ${NAME}:	${OBJ_PS} ${SRC_DIR}/push_swap/push_swap.c
